@@ -4,26 +4,24 @@
 
 1. ¿Qué variable representa la lista ABIERTA?
     
-    La variable que representa la lista Abierta es 'openSet', puesto que es una estructura de datos que contiene una serie de nodos que deben ser evaluados.
+  La variable designada para representar la lista Abierta es 'openSet', ya que esta variable se refiere a una estructura de datos que alberga un conjunto de nodos que requieren evaluación.
 
 2. ¿Qué variable representa la función g?
 
-    Esta representada por la variable gScore, puesto que es una estructura de datos (tipo map)  que recibe el nodo de inicio y el costo hasta el nodo n. 
-    
+    Esta representada por la variable gScore, la cual se elige como una estructura de datos, específicamente un mapa. Este mapa almacena la información relacionada con el nodo de inicio y los costos asociados hasta alcanzar el nodo específico 'n'.
+   
     ```
     gScore.put(start, 0);
     ```
-    En este fragmento de código, start es el nodo inicial y como esta en ese nodo en un principio tiene coste 0.
+    En este fragmento de código se puede apreciar el uso de gScore, recibiendo como parámetros el nodo inicial y el coste.
 
 3. ¿Qué variable representa la función f?
 
-    Esta representada por la variable fScore, ya que es una estructura de datos que recibe el nodo inicial (g(n)) y la heuristica estimada (h(n)).
+    Esta representada por la variable fScore, en este caso, 'fScore' recibe la contribución del costo acumulado desde el nodo inicial, expresado como 'g(n)', y la estimación heurística, denotada como 'h(n)'. 
     
     ```
      fScore.put(start, heuristicCostEstimate(start,goal));
     ```
-    
-     En este fragmento de código, start representa el nodo inicial y el metodo heuristicCostEstimate( ) la heuristica estimada.
      
 4. ¿Qué método habría que modificar para que la heurística representara
 la distancia aérea entre vértices?
@@ -32,7 +30,7 @@ la distancia aérea entre vértices?
     ```
     heuristicCostEstimate( )
     ```
-    ya que por defecto calcula la heuristica asignandole de coste 1 a cada vertica, entonces, habria implementar la fórmula de la distancia aérea dentro de dicho método.
+   Dado que, por defecto, se calcula la heurística asignándole un costo de 1 a cada vertice, entonces, será necesario implementar la fórmula de la distancia aérea dentro de dicho método. En otras palabras, para ajustar el cálculo heurístico y considerar las distancias diagonales de manera precisa, se debe incorporar la fórmula que calcula la distancia aérea en la lógica del método correspondiente. 
     
 5. ¿Realiza este método reevaluación de nudos cuando se encuentra una
 nueva ruta a un determinado vértice?
@@ -40,4 +38,4 @@ nueva ruta a un determinado vértice?
     ```
     private List<Graph.Edge<T>> reconstructPath(Map<Graph.Vertex<T>,Graph.Vertex<T>> cameFrom, Graph.Vertex<T> current)
     ```
-    Si, este método hace una reevaluación del camino. Es decir recibe un map con lo nudos y a partir del nudo objetivo 'current' reconstruye el camino. Luego recostruir el camino implica hacer una reevaluación del mismo y si consigue que el hay un camino mejor, hará el cambio.
+   Sí, este método realiza una reevaluación. Para explicarlo de manera más detallada, recibe un mapa que contiene nodos, y a partir del nodo objetivo llamado 'current', procede a reconstruir el camino. La reconstrucción del camino implica una reevaluación minuciosa del mismo, y si logra identificar una ruta más óptima, se realizará la actualización correspondiente. 
