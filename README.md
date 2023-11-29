@@ -6,7 +6,7 @@ Esta práctica consiste en analizar código del algoritmo A* y proporcionar resp
 
 ## Como utilizarlo:
 
-1. Clonar el repositorío.
+1. Clonar el repositorio.
 
     ```
     https://github.com/XMoraP/practica2_IA.git
