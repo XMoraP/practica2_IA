@@ -10,9 +10,9 @@
 2. Modificar el método main para indicar el nodo origen y el nodo destino, el cual proporciona el camino mejor basandose en el algoritmo A*.
 3. Ejecutar el comando:
 
-       ```
-       ant run_main
-       ```
+    ```
+    ant run_main
+    ```
 
 ## Respuestas: 
 
