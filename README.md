@@ -2,11 +2,16 @@
 
 ## Descripción:
 
-    Esta práctica consiste en analizar código del algoritmo A* y proporcionar respuestas a preguntas específicas relacionadas con las definiciones del algoritmo A*.
+Esta práctica consiste en analizar código del algoritmo A* y proporcionar respuestas a preguntas específicas relacionadas con las definiciones del algoritmo A*.
 
 ## Como utilizarlo:
 
 1. Clonar el repositorío.
+
+    ```
+    https://github.com/XMoraP/practica2_IA.git
+    ```
+   
 2. Modificar el método main para indicar el nodo origen y el nodo destino, el cual proporciona el camino mejor basandose en el algoritmo A*.
 3. Ejecutar el comando:
 
